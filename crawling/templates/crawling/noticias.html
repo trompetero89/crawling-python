@@ -1,0 +1,39 @@
+{% extends 'crawling/index.html' %}
+
+{% block content %}
+    <h1> Noticias y Eventos</h1>
+<p>Espacio para la aplicación de noticias</p>
+<script>
+$(document).ready(function() {
+    $('#example').DataTable({
+        select: true
+    });
+});
+</script>
+
+
+    <table id="table_id" class="display">
+
+    <thead>
+    <tr>
+        <th>Fecha</th>
+        <th>Titulo</th>
+        <th>Resumen</th>
+        <th>Enlace</th>
+        <th>Unidad</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for i,j,k,l,m in MyList %}
+        <tr>
+        <td>{{ i }}</td>
+        <td>{{ j }}</td>
+        <td>{{ k }}</td>
+        <td>{{ l }}</td>
+        <td>{{ m }}</td>
+
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock content %}

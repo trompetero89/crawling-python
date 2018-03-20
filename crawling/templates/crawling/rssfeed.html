@@ -1,0 +1,16 @@
+{% extends 'crawling/index.html' %}
+
+{% block content %}
+    <h1> RSS </h1>
+<p>Espacio para las fuentes RSS</p>
+
+    <form action="/crawling/rssfeed/" method="post">
+    <label for="your_name">Consulta: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+
+
+
+
+{% endblock content %}

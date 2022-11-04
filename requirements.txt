@@ -31,7 +31,7 @@ Scrapy==1.5.0
 scrapyd==1.2.0
 service-identity==17.0.0
 six==1.11.0
-Twisted==17.9.0
+Twisted==22.10.0
 ua-parser==0.7.3
 urllib3==1.22
 user-agents==1.1.0
